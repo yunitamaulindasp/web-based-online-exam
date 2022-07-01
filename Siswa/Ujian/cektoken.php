@@ -1,5 +1,5 @@
 <?php
-	require ('koneksi.php');
+	require ('../../koneksi.php');
 	$ujian = $_POST['kode'];
 	session_start();
 	$user = $_SESSION['iduser'];
@@ -10,10 +10,10 @@
 
 	$nilai = $hasil->num_rows;
 	if ($nilai > 0)
-	{	header("location:../../default.php?kode=nilai");
+	{	header("location:../../?kode=nilai");
 	}
 	else if (!empty($_SESSION['ujian']))
-	{	header("location:../../default.php?kode=uji&tes=1");
+	{	header("location:../../?kode=uji&tes=1");
 	}
 	else if ($nilai == 0)
 	{	$token = $_POST['token'];
