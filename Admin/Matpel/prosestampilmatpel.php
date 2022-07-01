@@ -1,7 +1,7 @@
 <?php
 	require 'koneksi.php';
 	$requestData = $_REQUEST;
-  $sql = "SELECT count(*) FROM matapelajaran";
+	$sql = "SELECT count(*) FROM matapelajaran";
 	$hasil = $mysqli->query($sql) or die ("Error: ". $mysqli->error);
 	$data = $hasil->fetch_row();
 	$totalData = $data[0];
