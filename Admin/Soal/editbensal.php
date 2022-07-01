@@ -15,7 +15,7 @@
 	$hasil = $mysqli->query($sql) or die ("Error :". $mysqli->error);
 	$data = $hasil->fetch_array();
 ?>	
-	<input type="hidden" name="kode" id="kode" value="<?php echo $soal; ?>">
+		<input type="hidden" name="kode" id="kode" value="<?php echo $soal; ?>">
 		<div class="col-12 grid-margin stretch-card">
 			<div class="card">
 				<div class="card-body">
@@ -42,7 +42,7 @@
 					</textarea>
 				</div>
 			</div>
-		</div>
+			</div>
 		<button type="submit" class="btn btn-gradient-info btn-icon-text col-12">
 			<i class="mdi mdi-file-check btn-icon-prepend"></i>
 			Tambah Soal
