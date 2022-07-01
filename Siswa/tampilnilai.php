@@ -12,20 +12,20 @@
 		<div class="card">
 			<div class="card-body">
 				<div>
-				<table id="tblnilai" class="table table-secondary">
-					<thead>
-						<tr>
-							<th> No </th>
-							<th> Ujian </th>
-							<th> Mata Pelajaran </th>
-							<th> Jumlah Peserta </th>
-							<th> Action </th>
-						</tr>
-					</thead>
-					<tbody>
+					<table id="tblnilai" class="table table-secondary">
+						<thead>
+							<tr>
+								<th> No </th>
+								<th> Ujian </th>
+								<th> Mata Pelajaran </th>
+								<th> Jumlah Peserta </th>
+								<th> Action </th>
+							</tr>
+						</thead>
+						<tbody>
 
-					</tbody>
-				</table>
+						</tbody>
+					</table>
 				</div>
 			</div>
 		</div>
