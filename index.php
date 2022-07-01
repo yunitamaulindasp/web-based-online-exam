@@ -1,5 +1,5 @@
 <?php
-	require ('koneksi.php');
+	include ('koneksi.php');
 	session_start();
 	if (!isset($_SESSION['nama'])) //bila tidak ada var, session
 	{	echo "<script>window.location.replace('login.php')</script>";
