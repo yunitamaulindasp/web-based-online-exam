@@ -142,7 +142,7 @@
 					title: "Edit Pengguna Berhasil",
 					message: hasil,
 					callback: function(result){
-					window.location.href = "default.php?kode=tampiluser";
+					window.location.href = "?kode=tampiluser";
 				}
 				});
 			})
