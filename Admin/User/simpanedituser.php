@@ -9,7 +9,7 @@
 	$atgl = explode('-', $tgl);
 	$tgl_lahir = "$atgl[2]-$atgl[1]-$atgl[0]";
 	
-	require("koneksi.php");
+	require '../../koneksi.php';
 	
 	$fotoLama = $_POST['fotolama'];
 	$fotoBaru = $_FILES['fotobaru'];
