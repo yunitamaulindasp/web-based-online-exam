@@ -1,5 +1,5 @@
 <?php
-	require 'koneksi.php';
+	require '../../koneksi.php';
 	$requestData = $_REQUEST;
   	$sql = "SELECT count(*) FROM setujian";
 	$hasil = $mysqli->query($sql) or die ("Error: ". $mysqli->error);
