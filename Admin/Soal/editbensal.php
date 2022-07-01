@@ -14,7 +14,8 @@
 	$sql = "SELECT * FROM soal WHERE kodesoal=$soal ";
 	$hasil = $mysqli->query($sql) or die ("Error :". $mysqli->error);
 	$data = $hasil->fetch_array();
-?>			
+?>	
+	<input type="hidden" name="kode" id="kode" value="<?php echo $soal; ?>">
 		<div class="col-12 grid-margin stretch-card">
       <div class="card">
 				<div class="card-body">
