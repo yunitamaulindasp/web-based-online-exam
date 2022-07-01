@@ -1,5 +1,4 @@
 <?php 
-	require ('koneksi.php');
 	$id = $_SESSION['id'];
 	$_SESSION['ujian'] = true;
 ?>
