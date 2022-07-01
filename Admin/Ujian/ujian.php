@@ -16,20 +16,20 @@
 						Tambah Ujian
 					</button>
 				</a>
-        		</div>
-          		<table id="tblgrup" class="table table-secondary">
-            			<thead>
-              				<tr>
-                				<th> No </th>
-                				<th> Kode Ujian </th>
-                				<th> Nama Ujian </th>
-                				<th> Mata Pelajaran </th>
-                				<th> Token Soal </th>
-              				</tr>
-            			</thead>
-            			<tbody>
-            			</tbody>
-          		</table>
+				<table id="tblgrup" class="table table-secondary">
+					<thead>
+						<tr>
+							<th> No </th>
+							<th> Kode Ujian </th>
+							<th> Nama Ujian </th>
+							<th> Mata Pelajaran </th>
+							<th> Token Soal </th>
+						</tr>
+					</thead>
+					<tbody>
+					</tbody>
+				</table>
+			</div>
 		</div>
 	</div>
 </div>
