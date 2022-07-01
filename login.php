@@ -56,7 +56,7 @@
                 title: 'Login berhasil',
                 message: 'Selamat datang ' + hasilProses,
                 callback: function(result){
-                  window.location.href = "default.php?kode=dashboard";
+                  window.location.href = "?kode=dashboard";
                 }
               });
             } else {
