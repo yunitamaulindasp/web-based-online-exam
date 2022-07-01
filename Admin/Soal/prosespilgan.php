@@ -9,7 +9,7 @@
 	$jawab = $_POST['jawaban'];
 	$pembahasan = $_POST['pembahasan'];
 	
-	require("koneksi.php");
+	require '../../koneksi.php';
 	$query = "INSERT INTO soal (kodegrup, jenissoal, soal, jawaban, pembahasan, piliha, pilihb, pilihc, pilihd) VALUES ('$grup', 'pilgan', '$soal', '$jawab', '$pembahasan', '$a', '$b', '$c', '$d');";
 	$hasil = $mysqli->query($query);
 	if (!$hasil)
