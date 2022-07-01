@@ -1,5 +1,5 @@
 <?php
-	require 'koneksi.php';
+	require '../../koneksi.php';
 	session_start();
 	$requestData = $_REQUEST;
  	$sql = "SELECT count(*) FROM soal WHERE kodegrup='$_SESSION[idgrup]' ";
