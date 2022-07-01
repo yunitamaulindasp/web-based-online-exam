@@ -8,7 +8,7 @@
 </div>
 
 <div class="row">
-	<form class="forms-sample" name="tambah" id="tambah" action="admin/soal/prosesbensal.php" method="POST" >
+	<form class="forms-sample" name="tambah" id="tambah" action="admin/soal/proseseditbensal.php" method="POST" >
 <?php
 	$soal = $_GET['soal'];
 	$sql = "SELECT * FROM soal WHERE kodesoal=$soal ";
