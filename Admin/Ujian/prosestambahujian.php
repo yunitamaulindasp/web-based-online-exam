@@ -5,7 +5,7 @@
 	$waktu = $_POST['waktu'];
 	$banyak = $_POST['banyaksoal'];
 	
-	require("koneksi.php");
+	require '../../koneksi.php';
 	$query = "INSERT INTO setujian (Nama, Grupsoal, Token, Waktu, Banyaksoal) VALUES ('$nama', '$grup', '$token', '$waktu', '$banyak')";
 	$hasil = $mysqli->query($query);	
 	
