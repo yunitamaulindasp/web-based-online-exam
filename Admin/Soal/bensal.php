@@ -36,6 +36,6 @@
 			<i class="mdi mdi-file-check btn-icon-prepend"></i>
 			Tambah Soal
 		</button>
-    </form>
+	</form>
 </div>
 <script src="Web/js/helpers/ckeditor/ckeditor.js"></script>
