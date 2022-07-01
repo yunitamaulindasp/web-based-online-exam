@@ -1,7 +1,7 @@
 <?php
 	require 'koneksi.php';
 	$requestData = $_REQUEST;
-  $sql = "SELECT count(*) FROM setujian";
+  	$sql = "SELECT count(*) FROM setujian";
 	$hasil = $mysqli->query($sql) or die ("Error: ". $mysqli->error);
 	$data = $hasil->fetch_row();
 	$totalData = $data[0];
@@ -10,7 +10,7 @@
 	$parameter = $requestData['search']['value'];
 	$start = $requestData['start'];
 	$length = $requestData['length'];
-  if (empty($parameter))
+  	if (empty($parameter))
 	{	$sql = "SELECT Kodeujian, Nama, Grupsoal, Token ";
 		$sql .= " FROM setujian ";
 		$sql .= " LIMIT $start, $length";
