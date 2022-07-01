@@ -20,9 +20,9 @@
 						</div>
 					</div>
 					<div class="form-group row">
-            <label class="col-sm-2 col-form-label">Kode Grup</label>
-            <div class="col-sm-10">
-              <select class="form-control" name="grup" id="grup">
+            					<label class="col-sm-2 col-form-label">Kode Grup</label>
+            					<div class="col-sm-10">
+              						<select class="form-control" name="grup" id="grup">
 								<?php
 									$sql= "SELECT kodegrup, nama, matpel FROM grup";
 									$hasil= $mysqli->query($sql) or die("Error: ". $mysli->error);
@@ -30,19 +30,19 @@
 									{
 								?>
 								<option value="<?php echo $arData['kodegrup']; ?>">
-									<?php 
-										$add = "SELECT matpel FROM matapelajaran WHERE kodematpel=".$arData['matpel'];
-										$hsl = $mysqli->query($add);
-										$data = $hsl->fetch_array();
-										echo '<td>'.$arData['nama'].', '.$data['matpel']. '</td>';
-									?>
+								<?php 
+									$add = "SELECT matpel FROM matapelajaran WHERE kodematpel=".$arData['matpel'];
+									$hsl = $mysqli->query($add);
+									$data = $hsl->fetch_array();
+									echo '<td>'.$arData['nama'].', '.$data['matpel']. '</td>';
+								?>
 								</option>
 								<?php 
 									}
 								?>
-              </select>
-            </div>
-          </div>
+              						</select>
+            					</div>
+          				</div>
 					<div class="form-group row">
 						<label class="col-sm-2 col-form-label">Token</label>
 						<div class="col-sm-10">
