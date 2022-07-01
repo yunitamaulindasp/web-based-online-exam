@@ -16,20 +16,20 @@
 						Tambah Grup Soal
 					</button>
 				</a>
+				<table id="tblgrup" class="table table-hover">
+					<thead>
+						<tr>
+							<th> No </th>
+							<th> Kode Grup Soal </th>
+							<th> Grup Soal </th>
+							<th> Mata Pelajaran </th>
+							<th> Action</th>
+						</tr>
+					</thead>
+					<tbody>
+					</tbody>
+				</table>
 			</div>
-			<table id="tblgrup" class="table table-hover">
-				<thead>
-					<tr>
-						<th> No </th>
-						<th> Kode Grup Soal </th>
-						<th> Grup Soal </th>
-						<th> Mata Pelajaran </th>
-						<th> Action</th>
-					</tr>
-				</thead>
-				<tbody>
-				</tbody>
-			</table>
 		</div>
 	</div>
 </div>
