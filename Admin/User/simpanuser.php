@@ -11,7 +11,7 @@
 	$atgl = explode('-', $tgl);
 	$tgl_lahir = "$atgl[2]-$atgl[1]-$atgl[0]";
 	
-	require("koneksi.php");
+	require '../../koneksi.php';
 	
 	$foto = $_FILES['foto'];
 	$pesan = array(1=>'Ukuran file terlalu besar', 2=>'Ukuran file terlalu besar', 3=>'Proses upload gagal', 4=>'Tidak ada file yang diunggah', 6=>'Folder temporer tidak ada', 7=>'Gagal menulis ke disk');
