@@ -1,10 +1,9 @@
 <?php
 	include ('koneksi.php');
 	session_start();
-	if (!isset($_SESSION['nama'])) //bila tidak ada var, session
+	if (!isset($_SESSION['nama']))
 	{	echo "<script>window.location.replace('login.php')</script>";
 		die();
-		
 	}
 	$sql = "SELECT * FROM pengguna WHERE nama='$_SESSION[nama]'";
 		$hasil = $mysqli->query($sql) or die("Error: ". $mysqli->error);
@@ -14,7 +13,6 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -38,9 +36,8 @@
 	</head>
 	
 	<body>
-    <div class="container-scroller">
-			
-      <nav class="navbar default-layout-navbar col-lg-12 col-12 p-0 fixed-top d-flex flex-row">
+		<div class="container-scroller">
+			<nav class="navbar default-layout-navbar col-lg-12 col-12 p-0 fixed-top d-flex flex-row">
 				<div class="text-center navbar-brand-wrapper d-flex align-items-center justify-content-center">
 					<a class="navbar-brand brand-logo">
 						<span> Ujian Online </span>
@@ -71,8 +68,7 @@
 					</button>
 				</div>
 			</nav>
-			
-      <div class="container-fluid page-body-wrapper">
+			<div class="container-fluid page-body-wrapper">
 <?php
 	if ($_SESSION['status'] == 'admin')
 	{
@@ -136,72 +132,72 @@
 				<div class="main-panel">
 					<div class="content-wrapper">
 					  <?php
-              if (isset($_GET['kode']))
-              {	$kode = $_GET['kode'];
-                if ($kode == 'dashboard')
-                {	include('admin/homeadmin.php');
-                }
-                else if ($kode == 'matpel')
-                {	include('admin/matpel/tampilmatpel.php');
-                }
-                else if ($kode == 'tambahmatpel')
-                {	include('admin/matpel/tambahmatpel.php');
-                }
-                else if ($kode == 'non')
-                {	include('admin/matpel/nonaktif.php');
-                }
-                else if ($kode == 'aktif')
-                {	include('admin/matpel/aktifkan.php');
-                }
-                else if ($kode == 'buatsoal')
-                {	include('admin/Soal/grupsoal.php');
-                }
-                else if ($kode == 'tambahgrup')
-                {	include('admin/Soal/tambahgrupsoal.php');
-                }
-                else if ($kode == 'tambahsoal')
-                {	include('admin/Soal/tambahsoal.php');
-                }
-                else if ($kode == 'pilgan')
-                {	include('admin/Soal/pilgan.php');
-                }
-                else if ($kode == 'bensal')
-                {	include('admin/Soal/bensal.php');
-                }
-                else if ($kode == 'editpilgan')
-                {	include('admin/Soal/editpilgan.php');
-                }
-                else if ($kode == 'editbensal')
-                {	include('admin/Soal/editbensal.php');
-                }
-                else if ($kode == 'buatujian')
-                {	include('admin/ujian/ujian.php');
-                }
-                else if ($kode == 'tambahujian')
-                {	include('admin/ujian/tambahujian.php');
-                }
-                else if ($kode == 'tampilnilai')
-                {	include('admin/nilai/tampilnilai.php');
-                }
-                else if ($kode == 'dnilai')
-                {	include('admin/nilai/detailnilai.php');
-                }
-                else if ($kode == 'tambahuser')
-                {	include('admin/user/tambahuser.php');
-                }
-                else if ($kode == 'tampiluser')
-                {	include('admin/user/tampilkanuser.php');
-                }
-                else if ($kode == 'edit')
-                {	include('admin/user/edituser.php');
-                }
-                else if ($kode == 'hapus')
-                {	include('admin/user/hapususer.php');
-                }
-              }
+					      if (isset($_GET['kode']))
+					      {	$kode = $_GET['kode'];
+					       if ($kode == 'dashboard')
+						{	include('admin/homeadmin.php');
+						}
+						else if ($kode == 'matpel')
+						{	include('admin/matpel/tampilmatpel.php');
+						}
+						else if ($kode == 'tambahmatpel')
+						{	include('admin/matpel/tambahmatpel.php');
+						}
+						else if ($kode == 'non')
+						{	include('admin/matpel/nonaktif.php');
+						}
+						else if ($kode == 'aktif')
+						{	include('admin/matpel/aktifkan.php');
+						}
+						else if ($kode == 'buatsoal')
+						{	include('admin/Soal/grupsoal.php');
+						}
+						else if ($kode == 'tambahgrup')
+						{	include('admin/Soal/tambahgrupsoal.php');
+						}
+						else if ($kode == 'tambahsoal')
+						{	include('admin/Soal/tambahsoal.php');
+						}
+						else if ($kode == 'pilgan')
+						{	include('admin/Soal/pilgan.php');
+						}
+						else if ($kode == 'bensal')
+						{	include('admin/Soal/bensal.php');
+						}
+						else if ($kode == 'editpilgan')
+						{	include('admin/Soal/editpilgan.php');
+						}
+						else if ($kode == 'editbensal')
+						{	include('admin/Soal/editbensal.php');
+						}
+						else if ($kode == 'buatujian')
+						{	include('admin/ujian/ujian.php');
+						}
+						else if ($kode == 'tambahujian')
+						{	include('admin/ujian/tambahujian.php');
+						}
+						else if ($kode == 'tampilnilai')
+						{	include('admin/nilai/tampilnilai.php');
+						}
+						else if ($kode == 'dnilai')
+						{	include('admin/nilai/detailnilai.php');
+						}
+						else if ($kode == 'tambahuser')
+						{	include('admin/user/tambahuser.php');
+						}
+						else if ($kode == 'tampiluser')
+						{	include('admin/user/tampilkanuser.php');
+						}
+						else if ($kode == 'edit')
+						{	include('admin/user/edituser.php');
+						}
+						else if ($kode == 'hapus')
+						{	include('admin/user/hapususer.php');
+						}
+					      }
 					  ?>	
-          </div>
-        </div>
+					</div>
+				</div>
 <?php
 	}
 	else
@@ -245,54 +241,50 @@
 				<div class="main-panel">
 					<div class="content-wrapper">
 						<?php
-              if (isset($_GET['kode']))
-              {	$kode = $_GET['kode'];
-                if ($kode == 'dashboard')
-                {	include('siswa/homesiswa.php');
-                }
-                else if ($kode == 'daftar')
-                {	include('siswa/ujian/tampildaftarujian.php');
-                }
-                else if ($kode == 'uji')
-                {	include('siswa/ujian/tampilujian.php');
-                }
-                else if ($kode == 'ujian')
-                {	include('siswa/ujian/tampilujian.php');
-                }
-                else if ($kode == 'nilai')
-                {	include('siswa/ujian/nilai.php');
-                }
-                else if ($kode == 'tampilanilai')
-                {	include('siswa/nilai/tampilnilai.php');
-                }
-              }
-						?>	
-          </div>
-        </div>
+	 						if (isset($_GET['kode']))
+						      	{	$kode = $_GET['kode'];
+							if ($kode == 'dashboard')
+							{	include('siswa/homesiswa.php');
+							}
+							else if ($kode == 'daftar')
+							{	include('siswa/ujian/tampildaftarujian.php');
+							}
+							else if ($kode == 'uji')
+							{	include('siswa/ujian/tampilujian.php');
+							}
+							else if ($kode == 'ujian')
+							{	include('siswa/ujian/tampilujian.php');
+							}
+							else if ($kode == 'nilai')
+							{	include('siswa/ujian/nilai.php');
+							}
+							else if ($kode == 'tampilanilai')
+							{	include('siswa/nilai/tampilnilai.php');
+							}
+						      }
+						?>
+					</div>
+				</div>
 <?php
 	}
-?>		
-      </div>
-    </div>
-    
+?>
+			</div>
+		</div>
+		
 		<footer class="footer">
-		  <div class="d-sm-flex justify-content-center justify-content-sm-between">
-			  <span class="text-muted text-sm-left d-block d-sm-inline-block">
-				  Copyright © Tugas Besar Pemrograman Web 2020
+			<div class="d-sm-flex justify-content-center justify-content-sm-between">
+				<span class="text-muted text-sm-left d-block d-sm-inline-block">
+					Copyright © Tugas Besar Pemrograman Web 2020
 				</span>
 			</div>
 		</footer>
-    
-    <script src="Web/assets/js/off-canvas.js"></script>
-    <script src="Web/assets/js/hoverable-collapse.js"></script>
-
-	  <script src="Web/jquery/jquery-easing/jquery.easing.min.js"></script>
-
-    <script src="Web/assets/js/todolist.js"></script>
-	  <script src="Web/assets/js/file-upload.js"></script>
-	
-	
-	  <script src="Web/bootstrap/js/bootstrap.min.js"> </script>
-	  <script src="Web/bootbox/bootbox.min.js"> </script>
-  </body>
+		
+		<script src="Web/assets/js/off-canvas.js"></script>
+		<script src="Web/assets/js/hoverable-collapse.js"></script>
+		<script src="Web/jquery/jquery-easing/jquery.easing.min.js"></script>
+		<script src="Web/assets/js/todolist.js"></script>
+		<script src="Web/assets/js/file-upload.js"></script>
+		<script src="Web/bootstrap/js/bootstrap.min.js"> </script>
+		<script src="Web/bootbox/bootbox.min.js"> </script>
+	</body>
 </html>
