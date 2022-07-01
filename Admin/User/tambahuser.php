@@ -132,7 +132,7 @@
 					title: "Tambah Pengguna Berhasil",
 					message: hasil,
 					callback: function(result){
-					window.location.href = "../../?kode=tampiluser";
+					window.location.href = "?kode=tampiluser";
 				}
 				});
 			})
