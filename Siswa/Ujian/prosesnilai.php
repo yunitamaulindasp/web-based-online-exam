@@ -1,5 +1,5 @@
 <?php
-	require ('koneksi.php');
+	require ('../../koneksi.php');
 	session_start();
 	$iduser = $_SESSION['iduser']; 
 	$idgrup = $_SESSION['id'];
