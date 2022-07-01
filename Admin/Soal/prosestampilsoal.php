@@ -2,16 +2,16 @@
 	require 'koneksi.php';
 	session_start();
 	$requestData = $_REQUEST;
-  $sql = "SELECT count(*) FROM soal WHERE kodegrup='$_SESSION[idgrup]' ";
+ 	$sql = "SELECT count(*) FROM soal WHERE kodegrup='$_SESSION[idgrup]' ";
 	$hasil = $mysqli->query($sql) or die ("Error: ". $mysqli->error);
 	$data = $hasil->fetch_row();
 	$totalData = $data[0];
 	$totalFilter = $totalData;
 
-  $parameter = $requestData['search']['value'];
+	$parameter = $requestData['search']['value'];
 	$start = $requestData['start'];
 	$length = $requestData['length'];
-  if (empty($parameter))
+  	if (empty($parameter))
 	{	$sql = "SELECT jenissoal, kodesoal, jawaban ";
 		$sql .= " FROM soal WHERE kodegrup='$_SESSION[idgrup]' ";
 		$sql .= " LIMIT $start, $length";
@@ -23,7 +23,7 @@
 		$sql .= " WHERE nama LIKE '%$parameter%' ";
 		$sql .= " OR matpel LIKE '%$parameter%' ";
 		$hasil = $mysqli->query($sql) or die ("Error: ". $mysqli->error);
-    $totalFilter = $hasil->num_rows;
+    		$totalFilter = $hasil->num_rows;
 		$sql .= " LIMIT $start, $length";
 		$hasil = $mysqli->query($sql) or die ("Error: ". $mysqli->error);
 	}
