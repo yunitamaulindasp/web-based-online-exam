@@ -11,8 +11,8 @@
 	<div class="col-lg-12 grid-margin stretch-card">
 		<div class="card">
 			<div class="card-body">
-        <h4 class="card-title">Nilai Ujian Siswa</h4>
-        <table id="tblnilai" class="table table-hover">
+				<h4 class="card-title">Nilai Ujian Siswa</h4>
+				<table id="tblnilai" class="table table-hover">
 					<thead>
 						<tr>
 							<th> No </th>
@@ -22,7 +22,7 @@
 						</tr>
 					</thead>
 					<tbody>
-          </tbody>
+					</tbody>
 				</table>
 			</div>
 		</div>
