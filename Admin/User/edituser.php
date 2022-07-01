@@ -34,7 +34,7 @@
 					<p class="card-description"> Profil </p>
 					<div class="form-group row">
 						<label class="col-sm-2 col-form-label">Nama</label>
-            <div class="col-sm-10">
+            					<div class="col-sm-10">
 							<input type="text" class="form-control" name="nama" id="nama" value="<?php echo $data[4] ?>">
 						</div>
 					</div>
@@ -48,7 +48,7 @@
 										Laki-laki
 									</label>
 								</div>
-              </div>
+              						</div>
 						</div>
 						<div class="col-md-5">
 							<div class="form-group">						
@@ -63,45 +63,46 @@
 					</div>
 					<div class="form-group row">
 						<label class="col-sm-2 col-form-label">Tempat Lahir</label>
-            <div class="col-sm-10">
+            					<div class="col-sm-10">
 							<input type="text" class="form-control" name="tempat" id="tempat" value="<?php echo $data[6] ?>" >
 						</div>
 					</div>
 					<div class="form-group row">
-                        <label class="col-sm-2 col-form-label">Tanggal Lahir</label>
-                        <div class="col-sm-5">
-                            <input type="date" class="form-control" name="tgl" id="tgl" value="<?php echo $tgl_lahir ?>"/>
-                        </div>
-                    </div>
-                    <div class="form-group row">
-                        <label class="col-sm-2 col-form-label">Status</label>
-                        <div class="col-sm-10">
-                            <select class="form-control" name="status" id="status">
-                                <option value="admin" <?php echo ($data[3] == "admin" ? "selected" : "") ?>>Admin</option>
-                                <option value="siswa" <?php echo ($data[3] == "siswa" ? "selected" : "") ?>>Siswa</option>
-                            </select>
-                        </div>
-                    </div>
-                    <div class="form-group row">
+                        			<label class="col-sm-2 col-form-label">Tanggal Lahir</label>
+                        			<div class="col-sm-5">
+                            				<input type="date" class="form-control" name="tgl" id="tgl" value="<?php echo $tgl_lahir ?>"/>
+                        			</div>
+                    			</div>
+                    			<div class="form-group row">
+                        			<label class="col-sm-2 col-form-label">Status</label>
+                        			<div class="col-sm-10">
+							<select class="form-control" name="status" id="status">
+								<option value="admin" <?php echo ($data[3] == "admin" ? "selected" : "") ?>>Admin</option>
+								<option value="siswa" <?php echo ($data[3] == "siswa" ? "selected" : "") ?>>Siswa</option>
+							</select>
+                        			</div>
+                    			</div>
+                    			<div class="form-group row">
 						<label class="col-sm-2 col-form-label">Foto Lama</label>
 						<div class="col-sm-10">
 							<img src='admin/user/upload/<?php echo $data[8] ?>' class="img-thumbnail">
 							<input type="hidden" name="fotolama" id="fotolama" value="<?php echo $data[7] ?>" />
-                        </div>
-                    </div>
+                        			</div>
+                    			</div>
 					<div class="form-group row">
 						<label class="col-sm-2 col-form-label">Foto Baru</label>
 						<div class="col-sm-10">
 							<input type="file" class="form-control-file" name="fotobaru" id="fotobaru">
 							<p class="card-description">File yang bisa diunggah hanya bertipe {jpg, jpeg, png, gif}, dengan ukuran maksimum 1MB.</p>
-                        </div>
-                    </div>
+                        			</div>
+                    			</div>
 					<button type="submit" class="btn btn-gradient-primary mr-2">Submit</button>
-                    <button class="btn btn-light">Cancel</button>
+                    			<button class="btn btn-light">Cancel</button>
 				</form>
 			</div>
 		</div>
 	</div>
+
 <script type="text/javascript">
 	$(document).ready(function()
 	{	$("#formedit").submit(function(e){
