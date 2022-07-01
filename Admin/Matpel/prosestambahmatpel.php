@@ -2,6 +2,8 @@
 	$nama = $_POST['nama'];
 	$tahun = $_POST['tahun'];
 	
+	require '../../koneksi.php';
+	
 	$query = "INSERT INTO matapelajaran (matpel, tahunajaran, aktif) VALUES ('$nama', '$tahun', 'Y')";
 	$hasil = $mysqli->query($query);
 	if (!$hasil)
