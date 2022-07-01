@@ -11,30 +11,29 @@
 	<div class="col-12 grid-margin">
 		<div class="card">
 			<div class="card-body">
-        <a href="?kode=tambahujian">
+        			<a href="?kode=tambahujian">
 					<button type="button" class="btn btn-secondary">
 						Tambah Ujian
 					</button>
 				</a>
-        <div>
-          <table id="tblgrup" class="table table-secondary">
-            <thead>
-              <tr>
-                <th> No </th>
-                <th> Kode Ujian </th>
-                <th> Nama Ujian </th>
-                <th> Mata Pelajaran </th>
-                <th> Token Soal </th>
-              </tr>
-            </thead>
-            <tbody>
-            </tbody>
-          </table>
-				</div>
-			</div>
+        		</div>
+          		<table id="tblgrup" class="table table-secondary">
+            			<thead>
+              				<tr>
+                				<th> No </th>
+                				<th> Kode Ujian </th>
+                				<th> Nama Ujian </th>
+                				<th> Mata Pelajaran </th>
+                				<th> Token Soal </th>
+              				</tr>
+            			</thead>
+            			<tbody>
+            			</tbody>
+          		</table>
 		</div>
 	</div>
 </div>
+
 <script type="text/javascript">
 	$(document).ready(function(){
 		var dataTable = $('#tblgrup').DataTable( {
