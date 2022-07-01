@@ -10,13 +10,13 @@
 	$hasil = $mysqli->query($query) or die ("Error: ". $mysqli->error);
 	if ($hasil->num_rows > 0)
 	{	$data = $hasil->fetch_row();
-		$iduser = $data[0]; //ambil id user
-		$status = $data[3]; //ambil status
-		$nama = $data[4]; //ambil nama
-		$foto = $data[8]; //ambil foto
+		$iduser = $data[0];
+		$status = $data[3];
+		$nama = $data[4];
+		$foto = $data[8];
 		
-		session_start(); //memulai session
-		$_SESSION['nama'] = $nama; //menyimpan variabel session
+		session_start();
+		$_SESSION['nama'] = $nama;
 		$_SESSION['iduser'] = $iduser;
 		$_SESSION['status'] = $status;
 		$_SESSION['foto'] = $foto;
