@@ -2,7 +2,7 @@
 	$nama = $_POST['nama'];
 	$matpel = $_POST['pelajaran'];
 	
-	require('koneksi.php');
+	require '../../koneksi.php';
 	$query = "INSERT INTO grup (nama, matpel) VALUES ('$nama', '$matpel')";
 	$hasil = $mysqli->query($query);
 	if (!$hasil)
