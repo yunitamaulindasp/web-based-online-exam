@@ -9,22 +9,22 @@
 
 <div class="row">
 	<form class="forms-sample" name="tambah" id="tambah" action="admin/soal/prosesbensal.php" method="POST">
-    <div class="col-12 grid-margin stretch-card">
-      <div class="card">
+		<div class="col-12 grid-margin stretch-card">
+			<div class="card">
 				<div class="card-body">
 					 <h4 class="card-title">Soal</h4>
 					<textarea id="soal" name="soal"  class="ckeditor"></textarea>
 				</div>
 			</div>
 		</div>
-    <div class="form-group">
+		<div class="form-group">
 			<h3 class="page-title"> Jawaban </h3>
 			<select class="form-control form-control" name="jawaban" id="jawaban">
 				<option value="benar">Benar</option>
 				<option value="salah">Salah</option>
 			</select>
 		</div>
-    <div class="col-12 grid-margin stretch-card">
+		<div class="col-12 grid-margin stretch-card">
 			<div class="card">
 				<div class="card-body">
 					<h4 class="card-title">Pembahasan</h4>
@@ -32,7 +32,7 @@
 				</div>
 			</div>
 		</div>
-    <button type="submit" class="btn btn-gradient-info btn-icon-text col-12">
+		<button type="submit" class="btn btn-gradient-info btn-icon-text col-12">
 			<i class="mdi mdi-file-check btn-icon-prepend"></i>
 			Tambah Soal
 		</button>
