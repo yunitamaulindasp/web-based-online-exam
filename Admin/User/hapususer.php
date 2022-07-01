@@ -1,6 +1,5 @@
 <?php
 	$iduser = $_GET['username'];
-	require 'koneksi.php';
 	$sql = "SELECT * FROM pengguna WHERE Username='$iduser'";
 	$hasil = $mysqli->query($sql) or die("Error: " . $mysqli->error);
 	if ($hasil->num_rows == 0)
