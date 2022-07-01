@@ -1,5 +1,5 @@
 <?php
-	require ('koneksi.php');
+	require ('../../koneksi.php');
 	
 	$pilih = $_POST['pilihan'];
 	$idjawab = $_POST['idjawab'];
