@@ -12,20 +12,20 @@
 		<div class="col-12 grid-margin stretch-card">
 			<div class="card">
 				<div class="card-body">
-          <h4 class="card-title"> Tambah Mata Pelajaran </h4>
-          <div class="form-group row">
+					<h4 class="card-title"> Tambah Mata Pelajaran </h4>
+					<div class="form-group row">
 						<label class="col-sm-2 col-form-label">Nama Mata Pelajaran</label>
 						<div class="col-sm-10">
 							<input type="text" class="form-control" name="nama" id="nama" placeholder="Nama Mata Pelajaran">
 						</div>
 					</div>
-          <div class="form-group row">
+					<div class="form-group row">
 						<label class="col-sm-2 col-form-label">Tahun Ajaran</label>
 						<div class="col-sm-10">
 							<input type="text" class="form-control" name="tahun" id="tahun" placeholder="Tahun Ajaran">
 						</div>
 					</div>
-        </div>
+				</div>
 			</div>
 		</div>
     <button type="submit" class="btn btn-primary col-12">Tambah Mata Pelajaran</button>
@@ -35,11 +35,11 @@
 <script type="text/javascript">
 	$(document).ready(function()
 	{	$("#tambahmatpel").submit(function(e)
-		{	e.preventDefault();	//gagalkan proses aslinya
+		{	e.preventDefault();
 			$.ajax({
-				url: "admin/matpel/prosestambahmatpel.php",	//tujuan data
-				type: "POST",	//cara kirim data
-				data: $("#tambahmatpel").serialize()	//data yang dikirim
+				url: "admin/matpel/prosestambahmatpel.php",
+				type: "POST",
+				data: $("#tambahmatpel").serialize()
 			})
 			.done(function(hasil){
 				bootbox.alert({
@@ -51,7 +51,7 @@
 				});
 			})
 			.fail(function(q, textStatus){
-				alert(textStatus);	//tampilkan sebagai alert
+				alert(textStatus);
 			})
 		});
 	});
