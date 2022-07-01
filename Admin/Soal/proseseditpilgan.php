@@ -9,7 +9,7 @@
 	$jawab = $_POST['jawaban'];
 	$pembahasan = $_POST['pembahasan'];
 	
-	require("koneksi.php");
+	require '../../koneksi.php';
 	$query = "UPDATE soal SET 
 			  soal='$soal',
 			  jawaban='$jawab',
