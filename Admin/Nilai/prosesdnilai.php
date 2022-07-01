@@ -3,16 +3,16 @@
 	
 	session_start();
 	$requestData = $_REQUEST;
-  $sql = "SELECT count(*) FROM nilai WHERE kodeujian='$_SESSION[kd]' ";
+	$sql = "SELECT count(*) FROM nilai WHERE kodeujian='$_SESSION[kd]' ";
 	$hasil = $mysqli->query($sql) or die ("Error: ". $mysqli->error);
 	$data = $hasil->fetch_row();
 	$totalData = $data[0];
 	$totalFilter = $totalData;
 	
-  $parameter = $requestData['search']['value'];
+  	$parameter = $requestData['search']['value'];
 	$start = $requestData['start'];
 	$length = $requestData['length'];
-  if (empty($parameter))
+  	if (empty($parameter))
 	{	$sql = "SELECT kodeujian, kodeuser, nilai, tanggal ";
 		$sql .= " FROM nilai WHERE kodeujian='$_SESSION[kd]' ";
 		$sql .= " LIMIT $start, $length";
