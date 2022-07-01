@@ -1,7 +1,7 @@
 <?php
 	require 'koneksi.php';
 	$requestData = $_REQUEST;
-  $sql = "SELECT count(*) FROM grup";
+  	$sql = "SELECT count(*) FROM grup";
 	$hasil = $mysqli->query($sql) or die ("Error: ". $mysqli->error);
 	$data = $hasil->fetch_row();
 	$totalData = $data[0];
@@ -10,7 +10,7 @@
 	$parameter = $requestData['search']['value'];
 	$start = $requestData['start'];
 	$length = $requestData['length'];
-  if (empty($parameter))
+  	if (empty($parameter))
 	{	$sql = "SELECT kodegrup, nama, matpel ";
 		$sql .= " FROM grup ";
 		$sql .= " LIMIT $start, $length";
