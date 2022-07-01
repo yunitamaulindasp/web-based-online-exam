@@ -82,7 +82,7 @@
 					title: "Tambah Ujian Berhasil",
 					message: hasil,
 					callback: function(result){
-						window.location.href = "../../?kode=buatujian";
+						window.location.href = "?kode=buatujian";
 					}
 				});
 			})
