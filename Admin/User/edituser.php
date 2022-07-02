@@ -70,7 +70,7 @@
 					<div class="form-group row">
                         			<label class="col-sm-2 col-form-label">Tanggal Lahir</label>
                         			<div class="col-sm-5">
-                            				<input type="date" class="form-control" name="tgl" id="tgl" value="<?php echo $tgl_lahir ?>"/>
+                            				<input type="date" class="form-control" name="tgl" id="tgl" value="<?php echo $data[7] ?>"/>
                         			</div>
                     			</div>
                     			<div class="form-group row">
